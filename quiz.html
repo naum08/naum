@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>quiz</title>
+</head>
+<body>
+<script type="text/javascript">
+
+	let numUser;
+	let numX=75;
+	do { numUser = prompt("вгадайте число від 0 до 100", "");
+	if (numUser===null) {
+		alert("Ми чекали від Вас число");
+	}else if (+numUser<numX) {
+		alert("Ваше число менше");
+	}else if (+numUser>numX) {
+		alert("Ваше число більше");
+} else {
+	alert("Ура!!! Вгадали!!!"+numX); }
+} while (numUser != numX && numUser != null)
+for(i=0;i<10000;1++){
+	document.write(Math.round(Math.random()*100))
+}
+</script>
+</body>
+</html>
